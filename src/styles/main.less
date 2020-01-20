@@ -1,0 +1,36 @@
+// less入口文件
+
+@import './common.less';
+@import './transitions.less';
+@import './trim.less';
+@import './flex.less';
+@import './public.less';
+
+html, body{
+  height: 100%;
+}
+
+body{
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
+input, textarea {
+    font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    outline: none;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    outline: none;
+    padding: 0px;
+    margin: 0;
+    border: none;
+}
+
+::-webkit-input-placeholder{
+  color: @subtext;
+}

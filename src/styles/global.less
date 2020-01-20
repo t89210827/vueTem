@@ -1,0 +1,63 @@
+// 全局变量和可混入类
+
+// 全局变量
+@main: #FFB100;
+@success: rgb(103, 248, 135);
+@danger: #FF2841;
+@info: #0094FF;
+@subtext: #A9A9A9;
+
+// 导出对象，可以在js文件中引入。导出的颜色对象已经挂在了Vue.prototype.$colors上
+:export {
+  main: @main;
+  success: @success;
+  danger: @danger;
+  info: @info;
+  subtext: @subtext;
+}
+
+// 全局类
+
+.color-main{
+  color: @main;
+}
+.color-success{
+  color: @success;
+}
+.color-danger{
+  color: @danger;
+}
+.color-info{
+  color: @info;
+}
+.color-subtext{
+  color: @subtext;
+}
+
+.color-main-bg{
+  background-color: @main;
+}
+.color-success-bg{
+  background-color: @success;
+}
+.color-danger-bg{
+  background-color: @danger;
+}
+.color-info-bg{
+  background-color: @info;
+}
+.color-subtext-bg{
+  background-color: @subtext;
+}
+
+.main-btn{
+  background-color: @main;
+  color: white;
+}
+
+// 文字超出省略号
+.text-limit{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
